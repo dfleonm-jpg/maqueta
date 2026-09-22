@@ -1,0 +1,182 @@
+/* ===================================================================
+   EDU-CONTROL  |  Estilo compartido de la maqueta
+   =================================================================== */
+
+:root{
+  --azul:#0F3D91;
+  --azul-claro:#9ECAFF;
+  --azul-noche:#0B1220;
+  --rojo:#B10E1E;
+  --verde:#1E7D3C;
+  --morado:#6A1B9A;
+  --dorado:#FFD24A;
+  --marron:#994300;
+  --texto:#111111;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:"Segoe UI",Cambria,Georgia,sans-serif;
+  color:#fff;
+  background:linear-gradient(160deg,#0B1220 0%,#0f1e3d 45%,#122a52 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  line-height:1.55;
+}
+
+/* ---------- Encabezado / titulo ---------- */
+.hero{
+  text-align:center;
+  padding:34px 16px 10px;
+}
+.hero .marquee{
+  display:block;
+  overflow:hidden;
+  white-space:nowrap;
+  background:linear-gradient(90deg,var(--rojo),#7a0a15);
+  border-radius:14px;
+  padding:14px 0;
+  box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+.hero .marquee span{
+  display:inline-block;
+  padding-left:100%;
+  font-family:"Trebuchet MS",fantasy;
+  font-size:clamp(22px,4vw,44px);
+  letter-spacing:2px;
+  color:#fff;
+  text-shadow:0 3px 8px rgba(0,0,0,.6);
+  animation:desliza 16s linear infinite;
+}
+@keyframes desliza{ from{transform:translateX(0);} to{transform:translateX(-100%);} }
+
+.hero h1{
+  margin:22px 0 6px;
+  font-size:clamp(26px,5vw,52px);
+  color:var(--dorado);
+  text-shadow:0 4px 14px rgba(0,0,0,.6);
+}
+.hero .sub{ color:var(--azul-claro); font-size:clamp(15px,2.2vw,20px); }
+
+/* ---------- Contenedor general ---------- */
+.wrap{ max-width:1100px; margin:0 auto; padding:0 18px 60px; }
+
+/* ---------- Titulos de seccion ---------- */
+.seccion-titulo{
+  text-align:center;
+  margin:44px 0 22px;
+  font-family:"Trebuchet MS",fantasy;
+  font-size:clamp(22px,3.4vw,36px);
+  color:var(--dorado);
+  text-shadow:0 3px 10px rgba(0,0,0,.5);
+}
+
+/* ---------- Tarjetas ---------- */
+.card{
+  background:rgba(255,255,255,.97);
+  color:var(--texto);
+  border-radius:18px;
+  padding:22px 24px;
+  margin:0 0 24px;
+  box-shadow:0 12px 34px rgba(0,0,0,.45);
+  border-top:6px solid var(--azul-claro);
+  animation:aparece .6s ease both;
+}
+@keyframes aparece{ from{opacity:0; transform:translateY(18px);} to{opacity:1; transform:none;} }
+
+.card h3{ margin-top:0; color:var(--azul); }
+
+.split{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+.split .media{ flex:0 0 260px; max-width:100%; }
+.split .media img{ width:100%; border-radius:12px; display:block; box-shadow:0 6px 18px rgba(0,0,0,.3); }
+.split .txt{ flex:1; min-width:240px; }
+.split.rev{ flex-direction:row-reverse; }
+
+/* ---------- Grid del menu principal ---------- */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:18px;
+  margin-top:8px;
+}
+.menu-item{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:10px;
+  text-decoration:none;
+  background:rgba(255,255,255,.96);
+  color:var(--azul);
+  border-radius:16px;
+  padding:18px 12px;
+  border:3px solid var(--azul-claro);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+  font-weight:700;
+  text-align:center;
+}
+.menu-item:hover{ transform:translateY(-6px) scale(1.03); box-shadow:0 16px 34px rgba(0,0,0,.5); background:#fff; }
+.menu-item img{ width:96px; height:96px; object-fit:contain; border-radius:10px; }
+.menu-item.destacado{ border-color:var(--rojo); color:var(--rojo); }
+
+/* ---------- Chips de zona ---------- */
+.zonas{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+.zona{ flex:1; min-width:200px; border-radius:12px; padding:14px; color:#fff; text-align:center; }
+.zona.control{ background:#243b6b; }
+.zona.restringida{ background:var(--rojo); }
+.zona.recuperacion{ background:var(--verde); }
+
+/* ---------- Columnas de info (4) ---------- */
+.cols4{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
+.colbox{ border-radius:16px; padding:16px; color:#fff; box-shadow:0 10px 24px rgba(0,0,0,.4); }
+.colbox h4{ text-align:center; margin:0 0 10px; font-family:"Trebuchet MS",fantasy; font-size:20px; }
+.colbox.azul{ background:var(--azul); }
+.colbox.rojo{ background:var(--rojo); }
+.colbox.verde{ background:var(--verde); }
+.colbox.morado{ background:var(--morado); }
+.colbox ul{ padding-left:20px; margin:0; }
+.colbox li{ margin-bottom:7px; }
+
+/* ---------- Medidas ---------- */
+.medidas{
+  display:flex; align-items:center; justify-content:center; gap:6px; flex-wrap:wrap;
+  background:#fff; color:#111; border-radius:16px; padding:18px; border:5px solid var(--rojo);
+}
+.medidas .m-zona{ padding:14px; border-radius:10px; color:#fff; text-align:center; min-width:130px; font-weight:700;}
+.medidas .m-zona.c{ background:#243b6b; }
+.medidas .m-zona.r{ background:var(--rojo); }
+.medidas .m-zona.g{ background:var(--verde); }
+.medidas .m-dist{ color:var(--rojo); font-weight:800; text-align:center; min-width:110px; }
+
+/* ---------- Tabla puntuacion ---------- */
+.tabla-pts{ width:100%; border-collapse:collapse; }
+.tabla-pts td{ padding:6px 8px; border-bottom:1px solid rgba(255,255,255,.25); vertical-align:top; }
+.tabla-pts td:first-child{ font-weight:800; white-space:nowrap; }
+
+/* ---------- Aviso ---------- */
+.aviso{ border-radius:14px; padding:16px 18px; color:#111; }
+.aviso.importante{ background:#fff; border:5px solid var(--dorado); }
+.aviso.recuerda{ background:#FFF3CD; border:5px solid var(--rojo); }
+.aviso h4{ margin:0 0 8px; color:var(--rojo); font-family:"Trebuchet MS",fantasy; font-size:22px; }
+
+/* ---------- Navegacion ---------- */
+.nav{ text-align:center; margin:38px 0 10px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.nav a{
+  text-decoration:none;
+  background:linear-gradient(180deg,#2456b8,#0F3D91);
+  color:#fff; padding:12px 26px; border-radius:30px; font-weight:700;
+  box-shadow:0 8px 18px rgba(0,0,0,.4);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.nav a:hover{ transform:translateY(-3px); box-shadow:0 14px 26px rgba(0,0,0,.55); }
+.nav a.rojo{ background:linear-gradient(180deg,#e23140,#B10E1E); }
+.nav a.verde{ background:linear-gradient(180deg,#2ba455,#1E7D3C); }
+
+/* ---------- Integrantes ---------- */
+.integrantes{ text-align:center; margin-top:26px; }
+.integrantes .chip{
+  display:inline-block; margin:6px; padding:10px 20px; border-radius:30px;
+  background:rgba(158,202,255,.16); border:1px solid var(--azul-claro); color:#fff; font-weight:600;
+}
+
+footer{ text-align:center; padding:24px; color:#8aa; font-size:14px; }
