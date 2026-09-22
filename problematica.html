@@ -1,81 +1,97 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EDU-CONTROL | Problematica</title>
-<link rel="stylesheet" href="estilo.css">
+<title>PROBLEMATICA - DESAFIO 4</title>
 </head>
-<body>
+<body bgcolor="#0B1220" text="#FFFFFF">
 
-<div class="hero">
-  <div class="marquee"><span>PROBLEMATICA &nbsp;&bull;&nbsp; EDU-CONTROL &nbsp;&bull;&nbsp; LA NECESIDAD REAL DEL COLEGIO</span></div>
-  <h1>Problematica</h1>
-</div>
+<marquee bgcolor="#000000" behavior="alternate" scrollamount="13">
+  <font color="#FF5555" size="7" face="fantasy">
+    PROBLEMATICA DEL DESAFIO
+  </font>
+</marquee>
 
-<div class="wrap">
+<center>
+  <font face="fantasy" size="6" color="#FF5555">
+    EL PROBLEMA A RESOLVER
+  </font>
+</center>
+<br>
 
-  <h2 class="seccion-titulo">¿Cual es el problema?</h2>
-  <div class="card">
-    <div class="split">
-      <div class="media"><img src="fotos/09.jpg" alt="Problematica" onerror="this.src='fotos/placeholder.svg'"></div>
-      <div class="txt">
-        <p>En el colegio, muchos estudiantes pierden materias porque se enteran de sus notas demasiado tarde, cuando ya no hay tiempo para recuperar. La aplicacion institucional actual es muy limitada: solo registra fallas e inasistencias, pero no muestra calificaciones en tiempo real, ni horarios, ni salones.</p>
-        <p>Esto genera desorganizacion, desinformacion y falta de seguimiento tanto para los alumnos como para sus familias.</p>
-      </div>
-    </div>
-  </div>
+<center>
+<table border="6" bordercolor="#B10E1E" bgcolor="#FFFFFF" cellpadding="14" width="90%">
+  <tr>
+    <td width="30%" align="center">
+      <img src="fotos/problema.svg" width="220" height="220">
+    </td>
+    <td width="70%">
+      <font face="Cambria" size="4" color="#000000">
+        Hay que recuperar un objeto (una esfera de unos 50 gramos) que se encuentra dentro de una
+        <b>zona restringida peligrosa</b> a la que no se puede entrar. El operador debe permanecer a distancia
+        y <b>no puede tocar el objeto</b> directamente ni meter la mano o herramientas manualmente durante la prueba.
+        El reto es lograr moverlo con precision hasta una zona segura.
+      </font>
+    </td>
+  </tr>
+</table>
+</center>
 
-  <h2 class="seccion-titulo">Puntos criticos detectados</h2>
-  <div class="cols4">
-    <div class="colbox rojo">
-      <h4>Notas tardias</h4>
-      <ul>
-        <li>Los estudiantes conocen sus calificaciones al final del periodo.</li>
-        <li>No hay tiempo para mejorar o recuperar.</li>
-      </ul>
-    </div>
-    <div class="colbox azul">
-      <h4>Desorganizacion</h4>
-      <ul>
-        <li>No se sabe con claridad el horario ni el salon del dia.</li>
-        <li>Se pierde tiempo buscando informacion.</li>
-      </ul>
-    </div>
-    <div class="colbox verde">
-      <h4>Disciplina</h4>
-      <ul>
-        <li>Fallas, retardos y puntos por uniforme sin control claro.</li>
-        <li>Padres desinformados del comportamiento.</li>
-      </ul>
-    </div>
-    <div class="colbox morado">
-      <h4>Herramientas limitadas</h4>
-      <ul>
-        <li>La app actual solo registra inasistencias.</li>
-        <li>No centraliza la informacion academica.</li>
-      </ul>
-    </div>
-  </div>
+<br>
+<center>
+  <font face="fantasy" size="6" color="#FF5555">
+    DISTRIBUCION DE LAS ZONAS
+  </font>
+</center>
+<br>
 
-  <h2 class="seccion-titulo">¿A quien afecta?</h2>
-  <div class="card">
-    <div class="txt">
-      <ul>
-        <li><b>Estudiantes:</b> pierden el control de su proceso academico y disciplinario.</li>
-        <li><b>Docentes:</b> no cuentan con una via agil para comunicar el estado del alumno.</li>
-        <li><b>Familias:</b> se enteran tarde de las dificultades de sus hijos.</li>
-      </ul>
-    </div>
-  </div>
+<center>
+<table border="6" bordercolor="#B10E1E" bgcolor="#FFFFFF" cellpadding="14" width="90%">
+  <tr>
+    <td align="center">
+      <img src="fotos/zonas.svg" width="620">
+      <br><br>
+      <font face="Cambria" size="4" color="#000000">
+        Zona de control &rarr; 30 cm &rarr; Zona restringida (20 x 20 cm, altura 5 cm) &rarr; 25 cm &rarr; Zona de recuperacion (15 x 15 cm).
+      </font>
+    </td>
+  </tr>
+</table>
+</center>
 
-  <div class="nav">
-    <a href="idea.html">&larr; Anterior</a>
-    <a href="index.html">Inicio</a>
-    <a class="verde" href="construccion.html">Siguiente &rarr;</a>
-  </div>
+<br>
+<center>
+  <font face="fantasy" size="6" color="#FF5555">
+    RESTRICCIONES IMPORTANTES
+  </font>
+</center>
+<br>
 
-</div>
-<footer>EDU-CONTROL &bull; Proyecto Final de Tecnologia 2026</footer>
+<center>
+<table border="6" bordercolor="#B10E1E" bgcolor="#B10E1E" cellpadding="14" width="90%">
+  <tr>
+    <td>
+      <font face="Cambria" size="4" color="#FFFFFF">
+        <ul>
+          <li>No se puede tocar directamente el objeto en ningun momento.</li>
+          <li>No se puede introducir manualmente ninguna herramienta durante la prueba.</li>
+          <li>No se permite usar motores, baterias, electricidad ni mecanismos electricos.</li>
+          <li>No se permite copiar un modelo comercial de internet como solucion.</li>
+          <li>El operador debe permanecer siempre en la zona de control.</li>
+        </ul>
+      </font>
+    </td>
+  </tr>
+</table>
+</center>
+
+<br><br>
+<center>
+  <a href="idea.html"><font face="Cambria" size="5" color="#9ECAFF">[ Anterior ]</font></a>
+  &nbsp;&nbsp;
+  <a href="index.html"><font face="Cambria" size="5" color="#9ECAFF">[ Inicio ]</font></a>
+  &nbsp;&nbsp;
+  <a href="solucion.html"><font face="Cambria" size="5" color="#65F527">[ Siguiente ]</font></a>
+</center>
+<br>
+
 </body>
 </html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#0F3D91"/>
+  <circle cx="150" cy="130" r="70" fill="#122a52" stroke="#9ECAFF" stroke-width="4"/>
+  <path d="M150 80 L150 180 M110 130 L190 130" stroke="#FFD24A" stroke-width="10" stroke-linecap="round"/>
+  <text x="150" y="250" font-family="Arial" font-size="34" fill="#FFD24A" text-anchor="middle" font-weight="bold">INICIO</text>
+</svg>

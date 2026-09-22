@@ -1,106 +1,69 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DESAFIO 4 - RECUPERACION A DISTANCIA</title>
+<title>MAQUETA 3D - DESAFIO 4</title>
 </head>
-
 <body bgcolor="#0B1220" text="#FFFFFF">
 
-<!-- ===================== TITULO ===================== -->
 <marquee bgcolor="#B10E1E" behavior="alternate" scrollamount="13">
   <font color="#FFFFFF" size="7" face="fantasy">
-    DESAFIO 4 &nbsp; | &nbsp; MISION: RECUPERACION A DISTANCIA
+    DESAFIO 4 - MISION: RECUPERACION A DISTANCIA
   </font>
 </marquee>
+
+<center>
+  <font face="fantasy" size="7" color="#FFD24A">MAQUETA EN 3D</font>
+  <br>
+  <font face="Cambria" size="4" color="#9ECAFF">
+    Recuperar una esfera de 50 g desde la zona restringida y llevarla a la zona de recuperacion, a distancia.
+  </font>
+</center>
 
 <br>
 
 <center>
-  <table width="92%" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="center">
-        <div style="display:inline-block; background-color:#B10E1E; color:#FFFFFF; padding:12px 28px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.5);">
-          <font face="fantasy" size="7" color="#FFFFFF">DESAFIO 4</font>
-        </div>
-        <br><br>
-        <font face="Cambria" size="6" color="#FFD24A"><b>MISION: RECUPERACION A DISTANCIA</b></font>
-        <br><br>
-        <div style="max-width:900px; background-color:#FFFFFF; color:#111111; border:5px solid #B10E1E; border-radius:16px; padding:18px;">
-          <font face="Cambria" size="4" color="#111111">
-            Recuperar un objeto que esta dentro de una <b>zona restringida</b> y llevarlo hasta la
-            <b>zona de recuperacion</b>. El operador debe permanecer a distancia y no puede tocar
-            directamente el objeto.
-          </font>
-        </div>
-      </td>
-    </tr>
-  </table>
-</center>
-
-<br><br>
-
-<!-- ===================== MODELO 3D ===================== -->
-<center>
-  <font face="fantasy" size="7" color="#FFD24A">MODELO 3D INTERACTIVO</font>
-  <br><br>
   <font face="Cambria" size="3" color="#9ECAFF">
-    Arrastra con el mouse para girar &middot; Rueda del mouse para acercar/alejar &middot; Toca y arrastra en el celular
+    Arrastra con el mouse para girar &middot; Rueda del mouse para acercar / alejar &middot; Toca y arrastra en el celular
   </font>
   <br><br>
 
-  <div style="width:92%; max-width:1050px; border:5px solid #B10E1E; border-radius:16px; overflow:hidden; background:#0d1526; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
-    <div id="escena3d" style="width:100%; height:520px;"></div>
-  </div>
+  <table border="6" bordercolor="#B10E1E" bgcolor="#0d1526" cellpadding="0">
+    <tr>
+      <td>
+        <div id="escena3d"></div>
+      </td>
+    </tr>
+  </table>
 
   <br>
-  <table width="92%" border="0" cellpadding="6">
+
+  <table width="90%" border="0" cellpadding="6">
     <tr valign="top">
-      <td align="center" width="33%">
-        <div style="background:#243b6b; border-radius:10px; padding:10px;">
-          <font face="Cambria" size="3" color="#FFFFFF"><b>ZONA DE CONTROL</b><br>Operador (jeringas / mandos)</font>
-        </div>
+      <td align="center" width="33%" bgcolor="#243b6b">
+        <font face="Cambria" size="3" color="#FFFFFF"><b>ZONA DE CONTROL</b><br>Operador (jeringas)</font>
       </td>
-      <td align="center" width="34%">
-        <div style="background:#B10E1E; border-radius:10px; padding:10px;">
-          <font face="Cambria" size="3" color="#FFFFFF"><b>ZONA RESTRINGIDA</b><br>20 x 20 cm &middot; alto 5 cm<br>aqui esta la esfera</font>
-        </div>
+      <td align="center" width="34%" bgcolor="#B10E1E">
+        <font face="Cambria" size="3" color="#FFFFFF"><b>ZONA RESTRINGIDA</b><br>20 x 20 cm - alto 5 cm<br>aqui esta la esfera</font>
       </td>
-      <td align="center" width="33%">
-        <div style="background:#1E7D3C; border-radius:10px; padding:10px;">
-          <font face="Cambria" size="3" color="#FFFFFF"><b>ZONA DE RECUPERACION</b><br>15 x 15 cm<br>aqui debe quedar el objeto</font>
-        </div>
+      <td align="center" width="33%" bgcolor="#1E7D3C">
+        <font face="Cambria" size="3" color="#FFFFFF"><b>ZONA DE RECUPERACION</b><br>15 x 15 cm<br>aqui debe quedar el objeto</font>
       </td>
     </tr>
   </table>
 </center>
 
-<br><br>
+<br>
 
-<!-- ===================== DIAGRAMA DE MEDIDAS ===================== -->
 <center>
-  <font face="fantasy" size="7" color="#FFD24A">MEDIDAS DEL MONTAJE</font>
+  <font face="fantasy" size="6" color="#FFD24A">MEDIDAS DEL MONTAJE</font>
   <br><br>
-  <table width="88%" border="6" bordercolor="#B10E1E" cellpadding="14" bgcolor="#FFFFFF">
+  <table border="6" bordercolor="#B10E1E" bgcolor="#FFFFFF" cellpadding="12" width="90%">
     <tr valign="middle" align="center">
-      <td width="22%" bgcolor="#243b6b">
-        <font face="Cambria" size="4" color="#FFFFFF"><b>ZONA DE CONTROL</b><br>(Operador)</font>
-      </td>
-      <td width="14%">
-        <font face="Cambria" size="5" color="#B10E1E"><b>&larr; 30 cm &rarr;</b></font><br>
-        <font face="Cambria" size="2" color="#333333">control &rarr; zona restringida</font>
-      </td>
-      <td width="20%" bgcolor="#B10E1E">
-        <font face="Cambria" size="4" color="#FFFFFF"><b>ZONA RESTRINGIDA</b><br>20 x 20 cm &middot; alto 5 cm</font>
-      </td>
-      <td width="14%">
-        <font face="Cambria" size="5" color="#B10E1E"><b>&larr; 25 cm &rarr;</b></font><br>
-        <font face="Cambria" size="2" color="#333333">borde restringida &rarr; recuperacion</font>
-      </td>
-      <td width="20%" bgcolor="#1E7D3C">
-        <font face="Cambria" size="4" color="#FFFFFF"><b>ZONA DE RECUPERACION</b><br>15 x 15 cm</font>
-      </td>
+      <td bgcolor="#243b6b"><font face="Cambria" size="4" color="#FFFFFF"><b>ZONA DE CONTROL</b></font></td>
+      <td><font face="Cambria" size="5" color="#B10E1E"><b>&larr; 30 cm &rarr;</b></font></td>
+      <td bgcolor="#B10E1E"><font face="Cambria" size="4" color="#FFFFFF"><b>ZONA RESTRINGIDA</b><br>20 x 20 cm - alto 5 cm</font></td>
+      <td><font face="Cambria" size="5" color="#B10E1E"><b>&larr; 25 cm &rarr;</b></font></td>
+      <td bgcolor="#1E7D3C"><font face="Cambria" size="4" color="#FFFFFF"><b>ZONA DE RECUPERACION</b><br>15 x 15 cm</font></td>
     </tr>
   </table>
   <br>
@@ -109,79 +72,63 @@
 
 <br><br>
 
-<!-- ===================== 4 COLUMNAS ===================== -->
 <center>
 <table width="94%" border="0" cellpadding="8">
   <tr valign="top">
 
-    <!-- CONDICIONES -->
-    <td width="25%">
-      <div style="background:#0F3D91; border-radius:14px; padding:14px; min-height:360px;">
-        <center><font face="fantasy" size="5" color="#FFFFFF">CONDICIONES DEL DESAFIO</font></center>
-        <font face="Cambria" size="3" color="#FFFFFF">
-          <ul>
-            <li>El objeto es una esfera de aproximadamente 50 gramos.</li>
-            <li>El objeto esta dentro de una zona restringida de 20 x 20 cm.</li>
-            <li>La zona restringida tiene una altura de 5 cm.</li>
-            <li>El operador permanece a distancia (mas de 5 cm del borde).</li>
-            <li>Distancia entre control y zona restringida: 30 cm.</li>
-            <li>Distancia entre el borde de la restringida y la de recuperacion: 25 cm.</li>
-            <li>Zona de recuperacion de 15 x 15 cm.</li>
-          </ul>
-        </font>
-      </div>
+    <td width="25%" bgcolor="#0F3D91">
+      <center><font face="fantasy" size="4" color="#FFFFFF">CONDICIONES</font></center>
+      <font face="Cambria" size="3" color="#FFFFFF">
+        <ul>
+          <li>Esfera de aproximadamente 50 gramos.</li>
+          <li>Zona restringida de 20 x 20 cm, altura 5 cm.</li>
+          <li>El operador permanece a distancia.</li>
+          <li>Control a 30 cm de la zona restringida.</li>
+          <li>25 cm entre restringida y recuperacion.</li>
+          <li>Zona de recuperacion de 15 x 15 cm.</li>
+        </ul>
+      </font>
     </td>
 
-    <!-- RESTRICCIONES -->
-    <td width="25%">
-      <div style="background:#B10E1E; border-radius:14px; padding:14px; min-height:360px;">
-        <center><font face="fantasy" size="5" color="#FFFFFF">RESTRICCIONES IMPORTANTES</font></center>
-        <font face="Cambria" size="3" color="#FFFFFF">
-          <ul>
-            <li>No se puede tocar directamente el objeto en ningun momento.</li>
-            <li>No se puede introducir manualmente ninguna herramienta para ayudar durante la prueba.</li>
-            <li>No se permite usar motores, baterias, electricidad ni mecanismos electricos.</li>
-            <li>No se permite reproducir mecanismos ni tomar un modelo comercial de internet como solucion.</li>
-          </ul>
-        </font>
-      </div>
+    <td width="25%" bgcolor="#B10E1E">
+      <center><font face="fantasy" size="4" color="#FFFFFF">RESTRICCIONES</font></center>
+      <font face="Cambria" size="3" color="#FFFFFF">
+        <ul>
+          <li>No tocar directamente el objeto.</li>
+          <li>No meter herramientas con la mano.</li>
+          <li>No usar motores ni electricidad.</li>
+          <li>No copiar modelos de internet.</li>
+        </ul>
+      </font>
     </td>
 
-    <!-- PUNTUACION -->
-    <td width="25%">
-      <div style="background:#1E7D3C; border-radius:14px; padding:14px; min-height:360px;">
-        <center><font face="fantasy" size="5" color="#FFFFFF">SISTEMA DE PUNTUACION</font></center>
-        <font face="Cambria" size="3" color="#FFFFFF">
-          <table width="100%" cellpadding="4">
-            <tr><td><b>100 pts</b></td><td>Captura, extrae y deposita el objeto en el centro de la zona de recuperacion.</td></tr>
-            <tr><td><b>80 pts</b></td><td>Captura, extrae y deposita el objeto dentro de la zona de recuperacion.</td></tr>
-            <tr><td><b>50 pts</b></td><td>Captura el objeto pero no consigue depositarlo en la zona de recuperacion.</td></tr>
-            <tr><td><b>20 pts</b></td><td>Hace contacto con el objeto pero no logra capturarlo.</td></tr>
-            <tr><td><b>0 pts</b></td><td>No logra interactuar con el objeto.</td></tr>
-          </table>
-        </font>
-      </div>
+    <td width="25%" bgcolor="#1E7D3C">
+      <center><font face="fantasy" size="4" color="#FFFFFF">PUNTUACION</font></center>
+      <font face="Cambria" size="3" color="#FFFFFF">
+        <table width="100%" cellpadding="3">
+          <tr><td><b>100</b></td><td>Deposita en el centro.</td></tr>
+          <tr><td><b>80</b></td><td>Deposita dentro de la zona.</td></tr>
+          <tr><td><b>50</b></td><td>Captura pero no deposita.</td></tr>
+          <tr><td><b>20</b></td><td>Toca pero no captura.</td></tr>
+          <tr><td><b>0</b></td><td>No interactua.</td></tr>
+        </table>
+      </font>
     </td>
 
-    <!-- MATERIALES -->
-    <td width="25%">
-      <div style="background:#6A1B9A; border-radius:14px; padding:14px; min-height:360px;">
-        <center><font face="fantasy" size="5" color="#FFFFFF">MATERIALES PERMITIDOS</font></center>
-        <font face="Cambria" size="3" color="#FFFFFF">
-          <ul>
-            <li>Jeringas</li>
-            <li>Agua</li>
-            <li>Mangueras y tubos</li>
-            <li>Carton</li>
-            <li>Madera</li>
-            <li>Palos de paleta</li>
-            <li>Plastico</li>
-            <li>Hilo</li>
-            <li>Pegamento</li>
-            <li>Materiales reciclados</li>
-          </ul>
-        </font>
-      </div>
+    <td width="25%" bgcolor="#6A1B9A">
+      <center><font face="fantasy" size="4" color="#FFFFFF">MATERIALES</font></center>
+      <font face="Cambria" size="3" color="#FFFFFF">
+        <ul>
+          <li>Jeringas</li>
+          <li>Agua</li>
+          <li>Mangueras y tubos</li>
+          <li>Carton y madera</li>
+          <li>Palos de paleta</li>
+          <li>Plastico e hilo</li>
+          <li>Pegamento</li>
+          <li>Reciclados</li>
+        </ul>
+      </font>
     </td>
 
   </tr>
@@ -190,27 +137,20 @@
 
 <br>
 
-<!-- ===================== IMPORTANTE / RECUERDA ===================== -->
 <center>
   <table width="88%" border="0" cellpadding="10">
     <tr valign="top">
-      <td width="50%">
-        <div style="background:#FFFFFF; color:#111111; border:5px solid #FFD24A; border-radius:14px; padding:14px;">
-          <font face="fantasy" size="5" color="#B10E1E">IMPORTANTE</font>
-          <font face="Cambria" size="3" color="#111111">
-            <p>Investiga, disena y construye tu propia solucion. La propuesta debe ser original y adecuada al problema planteado.</p>
-            <p>Se recomienda un sistema hidraulico controlado desde la zona de control para depositar el objeto en la zona segura.</p>
-          </font>
-        </div>
+      <td width="50%" bgcolor="#FFFFFF">
+        <font face="fantasy" size="4" color="#B10E1E">IMPORTANTE</font>
+        <font face="Cambria" size="3" color="#000000">
+          <p>Investiga, disena y construye tu propia solucion. Se recomienda un sistema hidraulico controlado desde la zona de control para depositar el objeto en la zona segura.</p>
+        </font>
       </td>
-      <td width="50%">
-        <div style="background:#FFF3CD; color:#111111; border:5px solid #B10E1E; border-radius:14px; padding:14px;">
-          <font face="fantasy" size="5" color="#B10E1E">RECUERDA</font>
-          <font face="Cambria" size="3" color="#111111">
-            <p>Tu mision es recuperar el objeto sin tocarlo, usando unicamente un sistema hidraulico controlado desde la zona de control, y depositarlo en la zona segura.</p>
-            <p><b>Investiga, disena, construye y supera el desafio.</b> La creatividad, el trabajo en equipo y la precision haran la diferencia.</p>
-          </font>
-        </div>
+      <td width="50%" bgcolor="#FFF3CD">
+        <font face="fantasy" size="4" color="#B10E1E">RECUERDA</font>
+        <font face="Cambria" size="3" color="#000000">
+          <p>Recupera la esfera sin tocarla, usando solo un sistema hidraulico controlado a distancia. La creatividad, el trabajo en equipo y la precision haran la diferencia.</p>
+        </font>
       </td>
     </tr>
   </table>
@@ -218,55 +158,47 @@
 
 <br><br>
 
-<!-- ===================== NAVEGACION ===================== -->
 <center>
-  <table cellpadding="6"><tr>
-  <td><a href="presentacion.html" style="text-decoration:none;background:#0F3D91;color:#fff;padding:12px 26px;border-radius:30px;font-family:Cambria;font-weight:bold;">&larr; Anterior</a></td>
-  <td><a href="index.html" style="text-decoration:none;background:#0F3D91;color:#fff;padding:12px 26px;border-radius:30px;font-family:Cambria;font-weight:bold;">Inicio</a></td>
-  <td><a href="construccion.html" style="text-decoration:none;background:#1E7D3C;color:#fff;padding:12px 26px;border-radius:30px;font-family:Cambria;font-weight:bold;">Ver Solucion &rarr;</a></td>
-  </tr></table>
+  <a href="solucion.html"><font face="Cambria" size="5" color="#9ECAFF">[ Anterior ]</font></a>
+  &nbsp;&nbsp;
+  <a href="index.html"><font face="Cambria" size="5" color="#9ECAFF">[ Inicio ]</font></a>
+  &nbsp;&nbsp;
+  <a href="materiales.html"><font face="Cambria" size="5" color="#65F527">[ Siguiente ]</font></a>
 </center>
 
 <br><br>
 
-<!-- ===================== THREE.JS ===================== -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function () {
   var contenedor = document.getElementById("escena3d");
+  var ancho = 980, alto = 520;
+  if (window.innerWidth < 1040) { ancho = Math.max(320, window.innerWidth - 60); alto = 420; }
+
   if (!contenedor || typeof THREE === "undefined") {
     if (contenedor) {
       contenedor.innerHTML =
-        '<p style="color:#fff;font-family:Cambria;padding:20px;text-align:center;">' +
-        'No se pudo cargar el modelo 3D (revisa tu conexion a internet).</p>';
+        '<font face="Cambria" size="4" color="#FFFFFF">No se pudo cargar el modelo 3D (revisa tu conexion a internet).</font>';
     }
     return;
   }
 
-  var ancho = contenedor.clientWidth;
-  var alto = contenedor.clientHeight;
-
-  // Escena
   var escena = new THREE.Scene();
   escena.background = new THREE.Color(0x0d1526);
 
-  // Camara
   var camara = new THREE.PerspectiveCamera(45, ancho / alto, 0.1, 1000);
   camara.position.set(45, 38, 55);
 
-  // Render
   var render = new THREE.WebGLRenderer({ antialias: true });
   render.setSize(ancho, alto);
   render.setPixelRatio(window.devicePixelRatio);
   contenedor.appendChild(render.domElement);
 
-  // Luces
   escena.add(new THREE.AmbientLight(0xffffff, 0.65));
   var sol = new THREE.DirectionalLight(0xffffff, 0.9);
   sol.position.set(40, 60, 30);
   escena.add(sol);
 
-  // ---- Mesa / piso ----
   var mesa = new THREE.Mesh(
     new THREE.BoxGeometry(120, 2, 90),
     new THREE.MeshLambertMaterial({ color: 0xC9A26B })
@@ -274,7 +206,6 @@
   mesa.position.y = -1;
   escena.add(mesa);
 
-  // Helper: placa cuadrada (zona)
   function placa(tam, color, x, z, altura) {
     var g = new THREE.Mesh(
       new THREE.BoxGeometry(tam, altura || 0.6, tam),
@@ -285,15 +216,10 @@
     return g;
   }
 
-  // Posiciones (escala: 1 unidad = 1 cm aprox, centradas)
-  var xControl = -40;
-  var xRestringida = 0;
-  var xRecuperacion = 35;
+  var xControl = -40, xRestringida = 0, xRecuperacion = 35;
 
-  // Zona de control (operador)
   placa(20, 0x243b6b, xControl, 0, 0.6);
 
-  // Jeringas (representacion) en la zona de control
   function jeringa(x, z) {
     var cuerpo = new THREE.Mesh(
       new THREE.CylinderGeometry(1.4, 1.4, 12, 16),
@@ -313,7 +239,6 @@
   jeringa(xControl, -4);
   jeringa(xControl, 4);
 
-  // Manguera (linea) desde control hacia la zona restringida
   var curva = new THREE.CatmullRomCurve3([
     new THREE.Vector3(xControl + 6, 2.5, 0),
     new THREE.Vector3(-18, 8, 0),
@@ -326,7 +251,6 @@
   );
   escena.add(manguera);
 
-  // Zona restringida (base) + paredes transparentes (20x20, alto 5)
   placa(20, 0x8a1f2a, xRestringida, 0, 0.6);
   var caja = new THREE.Mesh(
     new THREE.BoxGeometry(20, 5, 20),
@@ -334,7 +258,6 @@
   );
   caja.position.set(xRestringida, 2.5, 0);
   escena.add(caja);
-  // borde de la caja
   var bordes = new THREE.LineSegments(
     new THREE.EdgesGeometry(new THREE.BoxGeometry(20, 5, 20)),
     new THREE.LineBasicMaterial({ color: 0xB10E1E })
@@ -342,7 +265,6 @@
   bordes.position.set(xRestringida, 2.5, 0);
   escena.add(bordes);
 
-  // Esfera objetivo (~verde, dentro de la zona restringida)
   var esfera = new THREE.Mesh(
     new THREE.SphereGeometry(2.2, 32, 32),
     new THREE.MeshPhongMaterial({ color: 0x2ecc40, shininess: 80 })
@@ -350,7 +272,6 @@
   esfera.position.set(xRestringida, 2.9, 0);
   escena.add(esfera);
 
-  // Zona de recuperacion (15x15) con diana
   placa(15, 0x1E7D3C, xRecuperacion, 0, 0.6);
   var diana = new THREE.Mesh(
     new THREE.RingGeometry(2, 4, 32),
@@ -367,7 +288,20 @@
   puntoCentro.position.set(xRecuperacion, 0.72, 0);
   escena.add(puntoCentro);
 
-  // ---- Controles de orbita manuales (sin dependencias externas) ----
+  // brazo hidraulico simple sobre la zona de control apuntando a la restringida
+  var base = new THREE.Mesh(
+    new THREE.CylinderGeometry(1.2, 1.6, 6, 16),
+    new THREE.MeshLambertMaterial({ color: 0x8d6e3a })
+  );
+  base.position.set(-22, 3, 0);
+  escena.add(base);
+  var brazo = new THREE.Mesh(
+    new THREE.BoxGeometry(22, 1.2, 1.2),
+    new THREE.MeshLambertMaterial({ color: 0xC9A26B })
+  );
+  brazo.position.set(-12, 6, 0);
+  escena.add(brazo);
+
   var girando = false, px = 0, py = 0;
   var angY = Math.atan2(camara.position.x, camara.position.z);
   var angX = 0.62;
@@ -398,7 +332,6 @@
     actualizarCamara();
   }, { passive: false });
 
-  // Tactil
   render.domElement.addEventListener("touchstart", function (e) {
     girando = true; px = e.touches[0].clientX; py = e.touches[0].clientY;
   });
@@ -413,7 +346,6 @@
     e.preventDefault();
   }, { passive: false });
 
-  // Animacion: esfera con leve flotacion + auto giro suave cuando no se arrastra
   var t = 0;
   function animar() {
     requestAnimationFrame(animar);
@@ -423,14 +355,6 @@
     render.render(escena, camara);
   }
   animar();
-
-  // Responsive
-  window.addEventListener("resize", function () {
-    var w = contenedor.clientWidth, h = contenedor.clientHeight;
-    camara.aspect = w / h;
-    camara.updateProjectionMatrix();
-    render.setSize(w, h);
-  });
 })();
 </script>
 

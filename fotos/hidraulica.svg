@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="320" viewBox="0 0 620 320">
+  <rect width="620" height="320" fill="#eaf2ff"/>
+  <!-- mesa -->
+  <rect x="0" y="250" width="620" height="70" fill="#C9A26B"/>
+  <text x="310" y="30" font-family="Arial" font-size="22" fill="#0F3D91" text-anchor="middle" font-weight="bold">SISTEMA HIDRAULICO CON JERINGAS</text>
+
+  <!-- Jeringa control (operador) -->
+  <g>
+    <rect x="40" y="150" width="120" height="34" rx="8" fill="#dfefff" stroke="#0F3D91" stroke-width="3"/>
+    <rect x="20" y="156" width="30" height="22" rx="4" fill="#1E7D3C"/>
+    <line x1="30" y1="167" x2="10" y2="167" stroke="#1E7D3C" stroke-width="8" stroke-linecap="round"/>
+    <text x="90" y="210" font-family="Arial" font-size="13" fill="#0F3D91" text-anchor="middle">Jeringa (operador)</text>
+  </g>
+
+  <!-- Manguera -->
+  <path d="M160 167 C 260 120, 320 210, 420 167" fill="none" stroke="#FFB300" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Jeringa/actuador (brazo) -->
+  <g>
+    <rect x="420" y="150" width="110" height="34" rx="8" fill="#dfefff" stroke="#0F3D91" stroke-width="3"/>
+    <rect x="520" y="156" width="26" height="22" rx="4" fill="#B10E1E"/>
+    <line x1="546" y1="167" x2="566" y2="167" stroke="#B10E1E" stroke-width="8" stroke-linecap="round"/>
+    <text x="470" y="210" font-family="Arial" font-size="13" fill="#0F3D91" text-anchor="middle">Actuador / brazo</text>
+  </g>
+
+  <!-- Esfera objetivo -->
+  <circle cx="575" cy="240" r="14" fill="#2ecc40" stroke="#0a5" stroke-width="2"/>
+  <text x="575" y="275" font-family="Arial" font-size="12" fill="#0F3D91" text-anchor="middle">esfera 50 g</text>
+</svg>
